@@ -2,7 +2,9 @@
 
 This repository contains the code for the simulation and plugins built for Eve, the driverless car project of Project MANAS, Manipal.
 
-[Eve in simulation](images/logo.gif)    [Eve driving](images/road.gif)
+![Eve in simulation](images/logo.gif)
+
+![Eve driving](images/road.gif)
 
 ## Packages
 
