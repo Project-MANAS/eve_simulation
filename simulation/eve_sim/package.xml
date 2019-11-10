@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  	
+  	<name>eve_sim</name>
+	<version>0.0.1</version>
+	<description>Simulation environment for Eve</description>
+	
+	<maintainer email="ai_head@projectmanas.in">Sarthak Mittal</maintainer>
+	
+	<license>TODO</license>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<depend>urdf</depend>
+	<depend>gazebo_ros</depend>
+
+	<export>
+    	<gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
+  	</export>
+
+</package>

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='road_straight'>
+    <static>true</static>
+    <link name="road_straight">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://road_straight/materials/meshes/road_straight.dae</uri>
+                    <scale>0.5 0.5 1.0</scale>
+               </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://road_straight/materials/meshes/road_straight.dae</uri>
+                    <scale>0.5 0.5 1.0</scale>
+                </mesh>
+            </geometry>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100</mu>
+                        <mu2>50</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </link>
+  </model>
+</sdf>

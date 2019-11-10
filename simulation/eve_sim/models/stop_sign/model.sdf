@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='stop_sign'>
+    <static>true</static>
+    <link name="stop_sign">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://stop_sign/materials/meshes/stop_sign.dae</uri>
+                    <scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://stop_sign/materials/meshes/stop_sign.dae</uri>
+                    <scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

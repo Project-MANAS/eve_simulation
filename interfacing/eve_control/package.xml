@@ -1,0 +1,22 @@
+<package format="2">
+  <name>eve_control</name>
+  <version>0.0.1</version>
+  
+  <description>A keyboard controller for Eve</description>
+  <maintainer email="ai_head@projectmanas.in">Sarthak Mittal</maintainer> 
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>eve_msgs</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>eve_msgs</exec_depend>
+  <exec_depend>gazebo_msgs</exec_depend>
+
+  <export>
+  </export>
+
+</package>

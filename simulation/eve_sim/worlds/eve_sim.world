@@ -1,0 +1,931 @@
+<?xml version='1.0' encoding='ASCII'?>
+<!-- Created by Sarathkrishnan Ramesh on 21/9/18 -->
+<sdf version="1.4">
+  <world name="road test">
+    <!-- World Scene Settings -->
+    <scene>
+      <ambient>120 120 120 255</ambient>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+        <time>10:00</time>
+      </sky>
+    </scene>
+
+    <!-- Traffic Lights Plugin -->
+    <gui>
+     <plugin name="keyboard" filename="libKeyboardGUIPlugin.so">
+     </plugin>
+
+     <plugin name="TrafficLights" filename="libTrafficLightsGUIPlugin.so">
+
+       <!-- 1 -->
+       <key value="49" model="stop_light_post_1" color="red"/>
+       <key value="49" model="stop_light_post_2" color="green"/>
+
+       <!-- 2 -->
+       <key value="50" model="stop_light_post_1" color="green"/>
+       <key value="50" model="stop_light_post_2" color="red"/>
+
+     </plugin>
+    </gui>
+
+    <!-- Traffic Lights -->
+    <include>
+      <name>stop_light_post_1</name>
+      <uri>model://stop_light_post</uri>
+      <pose>-35 -35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>stop_light_post_2</name>
+      <uri>model://stop_light_post</uri>
+      <pose>-35 -25 0 0 0 1.57</pose>
+    </include>
+
+    <!-- Road Segments -->
+    <include>
+      <name>Road Intersection1</name>
+      <uri>model://road_intersection</uri>
+      <pose>-35 -35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight2</name>
+      <uri>model://road_straight</uri>
+      <pose>-35 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight3</name>
+      <uri>model://road_straight</uri>
+      <pose>-35 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight4</name>
+      <uri>model://road_straight</uri>
+      <pose>-35 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection2</name>
+      <uri>model://road_intersection</uri>
+      <pose>-35 5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight5</name>
+      <uri>model://road_straight</uri>
+      <pose>-35 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight6</name>
+      <uri>model://road_straight</uri>
+      <pose>-35 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection3</name>
+      <uri>model://road_intersection</uri>
+      <pose>-35 35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight7</name>
+      <uri>model://road_straight</uri>
+      <pose>-25 -35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight8</name>
+      <uri>model://road_straight</uri>
+      <pose>-25 5 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight9</name>
+      <uri>model://road_straight</uri>
+      <pose>-25 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight10</name>
+      <uri>model://road_straight</uri>
+      <pose>-15 -35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight11</name>
+      <uri>model://road_straight</uri>
+      <pose>-15 5 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight12</name>
+      <uri>model://road_straight</uri>
+      <pose>-15 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight13</name>
+      <uri>model://road_straight</uri>
+      <pose>-5 -35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight14</name>
+      <uri>model://road_straight</uri>
+      <pose>-5 5 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight15</name>
+      <uri>model://road_straight</uri>
+      <pose>-5 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Intersection4</name>
+      <uri>model://road_intersection</uri>
+      <pose>5 -35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight16</name>
+      <uri>model://road_straight</uri>
+      <pose>5 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection5</name>
+      <uri>model://road_intersection</uri>
+      <pose>5 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight17</name>
+      <uri>model://road_straight</uri>
+      <pose>5 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection6</name>
+      <uri>model://road_intersection</uri>
+      <pose>5 5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight18</name>
+      <uri>model://road_straight</uri>
+      <pose>5 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight19</name>
+      <uri>model://road_straight</uri>
+      <pose>5 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection7</name>
+      <uri>model://road_intersection</uri>
+      <pose>5 35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight20</name>
+      <uri>model://road_straight</uri>
+      <pose>15 -35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight21</name>
+      <uri>model://road_straight</uri>
+      <pose>15 -15 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight22</name>
+      <uri>model://road_straight</uri>
+      <pose>15 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight23</name>
+      <uri>model://road_straight</uri>
+      <pose>25 -35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight24</name>
+      <uri>model://road_straight</uri>
+      <pose>25 -15 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight25</name>
+      <uri>model://road_straight</uri>
+      <pose>25 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Intersection8</name>
+      <uri>model://road_intersection</uri>
+      <pose>35 -35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight26</name>
+      <uri>model://road_straight</uri>
+      <pose>35 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection9</name>
+      <uri>model://road_intersection</uri>
+      <pose>35 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight27</name>
+      <uri>model://road_straight</uri>
+      <pose>35 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight28</name>
+      <uri>model://road_straight</uri>
+      <pose>35 5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight29</name>
+      <uri>model://road_straight</uri>
+      <pose>35 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight30</name>
+      <uri>model://road_straight</uri>
+      <pose>35 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection10</name>
+      <uri>model://road_intersection</uri>
+      <pose>35 35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight31</name>
+      <uri>model://road_straight</uri>
+      <pose>35 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight32</name>
+      <uri>model://road_straight</uri>
+      <pose>35 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight33</name>
+      <uri>model://road_straight</uri>
+      <pose>35 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight34</name>
+      <uri>model://road_straight</uri>
+      <pose>35 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight35</name>
+      <uri>model://road_straight</uri>
+      <pose>35 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight36</name>
+      <uri>model://road_straight</uri>
+      <pose>35 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection11</name>
+      <uri>model://road_intersection</uri>
+      <pose>35 105 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight37</name>
+      <uri>model://road_straight</uri>
+      <pose>45 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight38</name>
+      <uri>model://road_straight</uri>
+      <pose>45 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight39</name>
+      <uri>model://road_straight</uri>
+      <pose>55 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight40</name>
+      <uri>model://road_straight</uri>
+      <pose>55 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight41</name>
+      <uri>model://road_straight</uri>
+      <pose>65 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight42</name>
+      <uri>model://road_straight</uri>
+      <pose>65 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight43</name>
+      <uri>model://road_straight</uri>
+      <pose>75 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight44</name>
+      <uri>model://road_straight</uri>
+      <pose>75 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight45</name>
+      <uri>model://road_straight</uri>
+      <pose>85 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight46</name>
+      <uri>model://road_straight</uri>
+      <pose>85 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight47</name>
+      <uri>model://road_straight</uri>
+      <pose>95 35 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Straight48</name>
+      <uri>model://road_straight</uri>
+      <pose>95 105 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Road Intersection12</name>
+      <uri>model://road_intersection</uri>
+      <pose>105 35 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight49</name>
+      <uri>model://road_straight</uri>
+      <pose>105 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight50</name>
+      <uri>model://road_straight</uri>
+      <pose>105 55 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <name>Road Straight51</name>
+      <uri>model://road_straight</uri>
+      <pose>105 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight52</name>
+      <uri>model://road_straight</uri>
+      <pose>105 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight53</name>
+      <uri>model://road_straight</uri>
+      <pose>105 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Straight54</name>
+      <uri>model://road_straight</uri>
+      <pose>105 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Road Intersection13</name>
+      <uri>model://road_intersection</uri>
+      <pose>105 105 0 0 0 1.57</pose>
+    </include>
+
+    <!-- Grass Segments-->
+    <include>
+      <name>Grass Plane 1</name>
+      <uri>model://grass_plane</uri>
+      <pose>-25 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 2</name>
+      <uri>model://grass_plane</uri>
+      <pose>-25 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 3</name>
+      <uri>model://grass_plane</uri>
+      <pose>-25 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 4</name>
+      <uri>model://grass_plane</uri>
+      <pose>-25 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 5</name>
+      <uri>model://grass_plane</uri>
+      <pose>-25 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 6</name>
+      <uri>model://grass_plane</uri>
+      <pose>-15 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 7</name>
+      <uri>model://grass_plane</uri>
+      <pose>-15 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 8</name>
+      <uri>model://grass_plane</uri>
+      <pose>-15 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 9</name>
+      <uri>model://grass_plane</uri>
+      <pose>-15 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 10</name>
+      <uri>model://grass_plane</uri>
+      <pose>-15 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 11</name>
+      <uri>model://grass_plane</uri>
+      <pose>-5 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 12</name>
+      <uri>model://grass_plane</uri>
+      <pose>-5 -15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 13</name>
+      <uri>model://grass_plane</uri>
+      <pose>-5 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 14</name>
+      <uri>model://grass_plane</uri>
+      <pose>-5 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 15</name>
+      <uri>model://grass_plane</uri>
+      <pose>-5 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 16</name>
+      <uri>model://grass_plane</uri>
+      <pose>15 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 17</name>
+      <uri>model://grass_plane</uri>
+      <pose>15 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 18</name>
+      <uri>model://grass_plane</uri>
+      <pose>15 5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 19</name>
+      <uri>model://grass_plane</uri>
+      <pose>15 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 20</name>
+      <uri>model://grass_plane</uri>
+      <pose>15 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 21</name>
+      <uri>model://grass_plane</uri>
+      <pose>25 -25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 22</name>
+      <uri>model://grass_plane</uri>
+      <pose>25 -5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 23</name>
+      <uri>model://grass_plane</uri>
+      <pose>25 5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 24</name>
+      <uri>model://grass_plane</uri>
+      <pose>25 15 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 25</name>
+      <uri>model://grass_plane</uri>
+      <pose>25 25 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 26</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 27</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 28</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 29</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 30</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 31</name>
+      <uri>model://grass_plane</uri>
+      <pose>45 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 32</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 33</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 34</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 35</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 36</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 37</name>
+      <uri>model://grass_plane</uri>
+      <pose>55 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 38</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 39</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 40</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 41</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 42</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 43</name>
+      <uri>model://grass_plane</uri>
+      <pose>65 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 44</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 45</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 46</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 47</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 48</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 49</name>
+      <uri>model://grass_plane</uri>
+      <pose>75 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 50</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 51</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 52</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 53</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 54</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 55</name>
+      <uri>model://grass_plane</uri>
+      <pose>85 95 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 56</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 45 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 57</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 55 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 58</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 65 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 59</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 60</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 85 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Grass Plane 61</name>
+      <uri>model://grass_plane</uri>
+      <pose>95 95 0 0 0 1.57</pose>
+    </include>
+
+    <!-- Manas Logo -->
+    <include name="manas">
+      <static>false</static>
+      <pose>70 70 8 0 0 0</pose>
+      <uri>model://manas</uri>
+    </include>
+
+    <!-- Speed Bumps -->
+    <include>
+      <name>Speed Bump 1</name>
+      <uri>model://speed_bump</uri>
+      <pose>-0.960217 35.002 -0.028867 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Speed Bump 2</name>
+      <uri>model://speed_bump</uri>
+      <pose>12.4039 34.9998 -0.028867 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Speed Bump 3</name>
+      <uri>model://speed_bump</uri>
+      <pose>-35.000 -5.34197 -0.028867 0 -0 1.5708</pose>
+    </include>
+    <include>
+      <name>Speed Bump 4</name>
+      <uri>model://speed_bump</uri>
+      <pose>34.9595 -6.88274 -0.028867 0 -0 1.5708</pose>
+    </include>
+    <include>
+      <name>Speed Bump 5</name>
+      <uri>model://speed_bump</uri>
+      <pose>-4.33912 5.00567 -0.028867 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Speed Bump 6</name>
+      <uri>model://speed_bump</uri>
+      <pose>-3.82383 -34.9918 -0.028867 0 -0 0</pose>
+    </include>
+
+    <!-- Speed Bump Sign -->
+    <include>
+      <name>Speed Bump Sign 1</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>-8.843940 39.753899 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Speed Bump Sign 2</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>18.195101 30.306200 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Speed Bump Sign 3</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>-10.686400 9.670940 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <name>Speed Bump Sign 4</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>39.730900 -1.389050 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Speed Bump Sign 5</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>-39.648200 -11.004100 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>Speed Bump Sign 6</name>
+      <uri>model://speed_bump_sign</uri>
+      <pose>-8.846580 -30.300301 0 0 0 1.57</pose>
+    </include>
+
+    <!-- Telephone Poles -->    
+    <include>
+      <name>Telephone Pole 1</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-30.2222 10.2489 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 2</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-30.1957 28.1465 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 3</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-30.4173 -7.48094 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 4</name>
+      <uri>model://telephone_pole</uri>
+      <pose>9.65728 -9.18632 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 5</name>
+      <uri>model://telephone_pole</uri>
+      <pose>9.45247 -27.0846 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 6</name>
+      <uri>model://telephone_pole</uri>
+      <pose>27.4951 -27.1777 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 7</name>
+      <uri>model://telephone_pole</uri>
+      <pose>27.4494 -8.90528 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 8</name>
+      <uri>model://telephone_pole</uri>
+      <pose>27.73 27.5284 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 9</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-30.5669 -29.1972 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 10</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-2.70395 -28.9625 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 11</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-2.56103 -15.146 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 12</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-1.92217 -2.34317 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 13</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-2.19099 11.5099 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 14</name>
+      <uri>model://telephone_pole</uri>
+      <pose>-1.93806 27.0591 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 15</name>
+      <uri>model://telephone_pole</uri>
+      <pose>9.85638 26.6625 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Telephone Pole 16</name>
+      <uri>model://telephone_pole</uri>
+      <pose>9.62377 10.0533 0 0 -0 0</pose>
+    </include>
+
+    <!-- Trees -->
+    <include>
+      <name>Tree 1</name>
+      <uri>model://tree</uri>
+      <pose>-28.3254 -20.0665 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 2</name>
+      <uri>model://tree</uri>
+      <pose>-19.5652 -28.1574 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 3</name>
+      <uri>model://tree</uri>
+      <pose>-3.58243 -5.86224 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 4</name>
+      <uri>model://tree</uri>
+      <pose>-13.7682 -15.2092 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 5</name>
+      <uri>model://tree</uri>
+      <pose>-4.51752 -24.8845 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 6</name>
+      <uri>model://tree</uri>
+      <pose>23.9758 -6.54597 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 7</name>
+      <uri>model://tree</uri>
+      <pose>-10.4085 14.9543 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 8</name>
+      <uri>model://tree</uri>
+      <pose>-10.4085 14.9543 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 9</name>
+      <uri>model://tree</uri>
+      <pose>20.7701 -28.4869 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 10</name>
+      <uri>model://tree</uri>
+      <pose>-24.1671 19.1306 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 11</name>
+      <uri>model://tree</uri>
+      <pose>-7.25346 28.1077 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 12</name>
+      <uri>model://tree</uri>
+      <pose>17.6093 27.0379 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 13</name>
+      <uri>model://tree</uri>
+      <pose>27.9725 17.7432 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 14</name>
+      <uri>model://tree</uri>
+      <pose>15.0277 4.18094 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 15</name>
+      <uri>model://tree</uri>
+      <pose>13.8434 -22.2242 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 16</name>
+      <uri>model://tree</uri>
+      <pose>27.196 -22.4897 0 0 -0 0</pose>
+    </include>
+    <include>
+      <name>Tree 17</name>
+      <uri>model://tree</uri>
+      <pose>-24.0918 -2.46856 0 0 -0 0</pose>
+    </include>
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+  </world>
+</sdf>

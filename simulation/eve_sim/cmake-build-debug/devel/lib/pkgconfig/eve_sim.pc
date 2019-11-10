@@ -1,0 +1,8 @@
+prefix=/home/naivehobo/Desktop/eve/catkin_ws/src/simulation/eve_sim/cmake-build-debug/devel
+
+Name: eve_sim
+Description: Description of eve_sim
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/naivehobo/Desktop/eve/catkin_ws/src/simulation/eve_sim/cmake-build-debug/devel/lib 
+Requires: gazebo_ros

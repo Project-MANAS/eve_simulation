@@ -1,0 +1,8 @@
+prefix=/home/naivehobo/Desktop/eve/catkin_ws/src/simulation/eve_plugin/cmake-build-debug/devel
+
+Name: eve_plugin
+Description: Description of eve_plugin
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/naivehobo/Desktop/eve/catkin_ws/src/simulation/eve_plugin/cmake-build-debug/devel/lib 
+Requires: gazebo_ros eve_msgs geometry_msgs nav_msgs

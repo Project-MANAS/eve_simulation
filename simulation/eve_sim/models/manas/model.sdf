@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='manas'>
+    <static>true</static>
+    <link name="manas">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://manas/materials/meshes/manas.dae</uri>
+		    	<scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://manas/materials/meshes/manas.dae</uri>
+		    	<scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

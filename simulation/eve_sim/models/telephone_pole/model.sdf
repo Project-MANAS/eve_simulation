@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='telephone_pole'>
+    <static>true</static>
+    <link name="telephone_pole">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://telephone_pole/materials/meshes/model.dae</uri>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://telephone_pole/materials/meshes/model.dae</uri>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

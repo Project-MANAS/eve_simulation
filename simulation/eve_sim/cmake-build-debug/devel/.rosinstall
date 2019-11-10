@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/naivehobo/Desktop/eve/catkin_ws/src/simulation/eve_sim/cmake-build-debug/devel/setup.sh

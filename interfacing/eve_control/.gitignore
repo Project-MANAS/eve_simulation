@@ -1,0 +1,8 @@
+*.bag
+*.pyc
+*.idea
+*.swp
+*.DS_STORE
+*.bag.active
+*/node_modules/
+*.json

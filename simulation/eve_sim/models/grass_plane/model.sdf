@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='grass_plane'>
+    <static>true</static>
+    <link name="grass_plane">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://grass_plane/materials/meshes/grass_plane.dae</uri>
+		    		<scale>0.5 0.5 1.0</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://grass_plane/materials/meshes/grass_plane.dae</uri>
+		    		<scale>0.5 0.5 1.0</scale>
+                </mesh>
+            </geometry>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100</mu>
+                        <mu2>50</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </link>
+  </model>
+</sdf>

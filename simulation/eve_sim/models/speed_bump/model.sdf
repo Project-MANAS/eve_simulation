@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='speed_bump'>
+    <static>true</static>
+    <link name="speed_bump">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://speed_bump/materials/meshes/speed_bump.dae</uri>
+		    		<scale>4.5 4.18 6</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100</mu>
+                        <mu2>50</mu2>
+                    </ode>
+                </friction>
+            </surface>
+            <geometry>
+                <mesh>
+                    <uri>model://speed_bump/materials/meshes/speed_bump.dae</uri>
+					<scale>4.5 4.18 6</scale>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+
+	<arg name="controller" default="keyboard"/>
+	<arg name="gui" default="true"/>
+	<arg name="paused" default="false"/>
+	
+	<arg name="model" default="$(find eve_description)/urdf/eve.urdf"/>
+
+	<param name="robot_description" textfile="$(arg model)"/>
+
+	<!-- <node name="logo_service" pkg="eve_sim" type="logo_service.py"/> -->
+	
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find eve_sim)/worlds/eve_sim.world"/>
+		<arg name="paused" value="$(arg paused)"/> 
+		<arg name="gui" value="$(arg gui)"/>
+	</include>
+
+	<node name="keyboard_controller" pkg="eve_control" type="keyboard_controller" if="$(eval controller == 'keyboard')">
+		<param name="throttle_rate" value="0.5"/>
+		<param name="steer_rate" value="1.0"/>
+	</node>
+
+	<node name="joystick_controller" pkg="eve_control" type="joystick_controller" if="$(eval controller == 'joystick')">
+		<param name="throttle_rate" value="0.5"/>
+		<param name="device_id" value="0"/>
+	</node>
+
+	<node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc" ns="zed"/>
+
+	<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+	</node>
+
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 0 -y 2 -z 0.3 -model eve"/>
+
+</launch>

@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='speed_limit_50'>
+    <static>true</static>
+    <link name="speed_limit_50">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://speed_limit_50/materials/meshes/speed_limit_50.dae</uri>
+                    <scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://speed_limit_50/materials/meshes/speed_limit_50.dae</uri>
+                    <scale>0.5 0.5 0.5</scale>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>
